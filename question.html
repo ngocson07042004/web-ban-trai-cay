@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/question.css">
+    <link rel="icon" type="x-image" href="./image/logo-title.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Câu hỏi thường gặp</title>
+</head>
+<body>
+    <header>
+        <img src="./image/logo.png" alt="Logo" class="img-header">
+
+        <div class="input-group-header">
+            <input type="text" placeholder="Tìm kiếm sản phẩm.."/>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="contact-notify">
+            <div class="icon-phone">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+                    
+            <div class="contact-title">
+                <h4 class="title">Hỗ trợ liên hệ</h4>
+                <a href="">1900 1024</a>
+            </div>
+        </div>
+
+        <div class="user-notify">
+            <div class="icon-user">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="user-title">
+                <h4 class="title">Xin chào!</h4>
+                <a href="./login.html">Đăng nhập</a>
+            </div>
+        </div>
+
+        <div class="icons-header">
+            <button class="btn">
+                <i class="fa-regular fa-heart"></i>
+                <span class="amount" id="count-heart">0</span>
+                <span class="hidden">Yêu thích</span>
+            </button>
+
+            <button class="btn">
+                <i class="fa-solid fa-cart-shopping" id="btn-cart"></i>
+                <span class="amount">0</span>
+                <span class="hidden">Giỏ hàng</span>
+            </button>
+
+            <button class="btn">
+                <i class="fa-solid fa-shuffle"></i>
+                <span class="amount">0</span>
+                <span class="hidden">So sánh</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-menu">
+            <nav class="navbar">
+                <div class="navbar-menu-product">
+                    <button>
+                        <span>Danh sách sản phẩm</span>
+                        <ul class="menu-product">
+                            <li>
+                                <img src="./image/banner-dai-dien-trai-cay.jpg" alt="Banner trái cây">
+                                <a href="./product.html">Trái cây tươi</a>
+                            </li>
+                
+                            <li>
+                                <img src="./image/banner-nuoc-ep-trai-cay.jpg" alt="Banner nước ép">
+                                <a href="./product.html">Nước ép</a>
+                            </li>
+                
+                            <li>
+                                <img src="./image/banner-trai-cay-dong-hop.jpg" alt="Banner trái cây đóng hộp">
+                                <a href="./product.html">Trái cây đóng hộp</a>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+    
+                <ul class="menu">
+                    <li><a href="./home.html">Trang chủ</a></li>
+                    <li><a href="./introduction.html">Giới thiệu</a></li>
+                    <li>
+                        <a href="./product.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-caret-down"></i>
+        
+                            <ul class="sub-menu-product">
+                                <li><a href="./product.html">Trái cây tươi</a></li>
+                                <li><a href="./product.html">Nước ép</a></li>
+                                <li><a href="./product.html">Trái cây đóng hộp</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a href="./question.html" class="active">Câu hỏi thường gặp</a></li>
+                    <li><a href="./recruitment.html">Tuyển dụng</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="url-content">
+                <a href="./home.html">Trang chủ</a> / <span>Câu hỏi thường gặp</span>
+            </div>
+            
+            <h3>CÂU HỎI THƯỜNG GẶP</h3><br>
+
+            <div class="questions"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="content-menu">
+            <ul class="menu-footer">
+                <li>
+                    VĂN PHÒNG CHÚNG TÔI
+                    <ul class="menu">
+                        <li><a href="./home.html" class="active">Trang chủ</a></li>
+                        <li><a href="./introduction.html">Giới thiệu</a></li>
+                        <li>
+                            <a href="product.html">
+                                Sản phẩm
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li><a href="./question.html">Câu hỏi thường gặp</a></li>
+                        <li><a href="./recruitment.html">Tuyển dụng</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    VỀ CHÚNG TÔI
+                    <ul class="menu">
+                        <li><a href="./home.html" class="active">Trang chủ</a></li>
+                        <li><a href="./introduction.html">Giới thiệu</a></li>
+                        <li>
+                            <a href="./product.html">
+                                Sản phẩm
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li><a href="./question.html">Câu hỏi thường gặp</a></li>
+                        <li><a href="./recruitment.html">Tuyển dụng</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    CHÍNH SÁCH BÁN HÀNG
+                    <ul class="menu">
+                        <li><a href="./home.html" class="active">Trang chủ</a></li>
+                        <li><a href="./introduction.html">Giới thiệu</a></li>
+                        <li>
+                            <a href="./product.html">
+                                Sản phẩm
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li><a href="question.html">Câu hỏi thường gặp</a></li>
+                        <li><a href="recruitment.html">Tuyển dụng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    THEO DÕI CHÚNG TÔI
+                    <ul class="menu">
+                        <li><a href="./home.html" class="active">Trang chủ</a></li>
+                        <li><a href="./introduction.html">Giới thiệu</a></li>
+                        <li>
+                            <a href="./product.html">
+                                Sản phẩm
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li><a href="./question.html">Câu hỏi thường gặp</a></li>
+                        <li><a href="./recruitment.html">Tuyển dụng</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <hr/>
+
+        <div class="content-footer">
+            <div class="content-address">
+                <h4>Thiên đường mua sắm Fruit Mart</h4>
+                <p>- Địa chỉ: Toà nhà LALA, đường A, Ba Đình, Hà Nội</p>
+                <p>- Điện thoại: 1900 1024 - Email: support.fruit.mart@.vn</p>
+            </div>
+
+            <div class="content-email">
+                <h4>NHẬN TIN KHUYẾN MÃI</h4>
+
+                <div class="input-group-footer">
+                    <input type="text" placeholder="Nhập email của bạn.."/>
+                    <button>Đăng ký</button>
+                </div>
+
+                <div class="icons-footer">
+                    <button class="btn btn1">
+                        <i class="fa-brands fa-facebook"></i>
+                    </button>
+
+                    <button class="btn btn2">
+                        <i class="fa-brands fa-twitter"></i>
+                    </button>
+        
+                    <button class="btn btn3">
+                        <i class="fa-brands fa-google"></i>
+                    </button>
+
+                    <button class="btn btn4">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr />
+    </footer>
+
+    <div class="container-menu-bottom">
+        <ul class="menu-bottom">
+            <li>
+                <a href="./home.html">
+                    <span><i class="fa-solid fa-house icon"></i></span>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+
+            <li id="btn-category">
+                <i class="fa-solid fa-list"></i>
+                <span>Danh mục</span>
+            </li>
+            
+            <li id="btn-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span>Giỏ hàng</span>
+                <span class="quantity">0</span>      
+            </li>
+
+            <li>
+                <a href="./question.html">
+                    <i class="fa-solid fa-question"></i>
+                    <span>Tin tức</span>
+                </a>
+            </li>
+
+            <li id="btn-favorite">
+                <i class="fa-solid fa-heart"></i>
+                <span>Yêu thích</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-slider" id="menu-slider">
+        <div class="slider-title">
+            <span class="title">Danh sách sản phẩm</span>
+            <button class="btn-close" id="btn-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="menu-product-slider">
+            <ul class="menu-product">
+                <li>
+                    <img src="./image/banner-dai-dien-trai-cay.jpg" alt="Banner trái cây">
+                    <a href="./product.html">Trái cây tươi</a>
+                </li>
+    
+                <li>
+                    <img src="./image/banner-nuoc-ep-trai-cay.jpg" alt="Banner nước ép">
+                    <a href="./product.html">Nước ép</a>
+                </li>
+    
+                <li>
+                    <img src="./image/banner-trai-cay-dong-hop.jpg" alt="Banner trái cây đóng hộp">
+                    <a href="./product.html">Trái cây đóng hộp</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menubar-slider">
+            <ul class="menu">
+                <li><a href="./home.html">Trang chủ</a></li>
+                <li><a href="./introduction.html">Giới thiệu</a></li>
+                <li>
+                    <a href="./product.html">
+                        Sản phẩm
+                        <i class="fa-solid fa-caret-down"></i>
+    
+                        <ul class="sub-menu-product">
+                            <li><a href="./product.html">Trái cây tươi</a></li>
+                            <li><a href="./product.html">Nước ép</a></li>
+                            <li><a href="./product.html">Trái cây đóng hộp</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="./question.html">Câu hỏi thường gặp</a></li>
+                <li><a href="./recruitment.html">Tuyển dụng</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+                <li>
+                    <div class="contact-notify">
+                        <div class="icon-phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                                
+                        <div class="contact-title">
+                            <h4 class="title">Hỗ trợ liên hệ</h4>
+                            <a href="">1900 1024</a>
+                        </div>
+                    </div>
+            
+                    <div class="user-notify">
+                        <div class="icon-user">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+            
+                        <div class="user-title">
+                            <h4 class="title">Xin chào!</h4>
+                            <a href="./login.html">Đăng nhập</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn-category").click(function(){
+                $("#menu-slider").css("transform", "translateX(0)")
+                $("#overlay").css({
+                    "visibility": "visible",
+                    "opacity": 1
+                })
+            })
+
+            $("#btn-close, #overlay").click(function(){
+                $("#menu-slider").css("transform", "translateX(-100%)")
+                $("#overlay").css({
+                    "visibility": "hidden",
+                    "opacity": 0
+                })
+            })
+        })
+    </script>
+
+    <script src="https://kit.fontawesome.com/4c642f8e07.js" crossorigin="anonymous"></script>
+    <script src="./controller/addQuestion.js"></script>
+</body>
+</html>
